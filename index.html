@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Shopping Cart</h1>
+  <div id="products">
+    <div class="product">
+      <img src="https://source.unsplash.com/random/200x200" alt="product image">
+      <h2>Product 1</h2>
+      <p>Rs.20</p>
+      <button class="add-to-cart" data-name="Product 1" data-price="20">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/random/200x200" alt="product image">
+      <h2>Product 2</h2>
+      <p>Rs.30</p>
+      <button class="add-to-cart" data-name="Product 2" data-price="30">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/random/200x200" alt="product image">
+      <h2>Product 3</h2>
+      <p>Rs.40</p>
+      <button class="add-to-cart" data-name="Product 3" data-price="40">Add to Cart</button>
+    </div>
+  </div>
+  <h2>Checkout</h2>
+  <table id="cart">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody id="cart-items"></tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total:</td>
+        <td id="cart-total"></td>
+      </tr>
+    </tfoot>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
